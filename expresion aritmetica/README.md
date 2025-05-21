@@ -1,4 +1,4 @@
-# Evaluacion Semestre II
+# Evaluacion Semestre 2
 
 ## Integrantes
 
