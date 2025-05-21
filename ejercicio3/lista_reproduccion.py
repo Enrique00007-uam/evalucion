@@ -13,14 +13,14 @@ class Cancion:
 
 class Nodo:  
     def __init__(self, cancion=None):
-        self.cancion = cancion
+        self.cancion = cancion # dato
         self.siguiente = None
         self.anterior = None
 
 class ListaReproduccion:
     def __init__(self):
-        self.cabeza = None
-        self.cola = None
+        self.cabeza = None # Primera canción
+        self.cola = None # Última canción
         self.actual = None # Nodo de la canción actualmente "reproduciéndose"
 
     def esta_vacia(self):
@@ -30,7 +30,7 @@ class ListaReproduccion:
         nueva_cancion = Cancion(titulo, artista)
         nuevo_nodo = Nodo(nueva_cancion)
         if self.esta_vacia():
-            self.cabeza = nuevo_nodo
+            self.cabeza = nuevo_nodo 
             self.cola = nuevo_nodo
             self.actual = nuevo_nodo # La primera canción es la actual
         else:
@@ -85,6 +85,7 @@ class ListaReproduccion:
                  return
             print("No hay canción actual o la lista está vacía.")
             return
+        
         if self.actual.siguiente:
             self.actual = self.actual.siguiente
             print(f"Reproduciendo siguiente: {str(self.actual.cancion)}")
@@ -130,3 +131,4 @@ class ListaReproduccion:
              print(" (Ninguna canción seleccionada para reproducir)")
         elif self.actual:
             print(f"\nReproduciendo actualmente: {str(self.actual.cancion)}")
+  

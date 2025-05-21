@@ -13,9 +13,9 @@ def main():
         if opcion == '1':
             cadena = input("Ingrese la cadena de texto con paréntesis: ")
             if verificar_parentesis_balanceados(cadena):
-                print(f"La cadena '{cadena}' tiene los paréntesis balanceados.")
+                print(f"La cadena {cadena} tiene los paréntesis balanceados.")
             else:
-                print(f"La cadena '{cadena}' NO tiene los paréntesis balanceados.")
+                print(f"La cadena {cadena} NO tiene los paréntesis balanceados.")
         elif opcion == '2':
             print("Saliendo del programa.")
             break

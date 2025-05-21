@@ -14,8 +14,7 @@ def main():
 
    
     playlist.agregar_cancion("Bohemian Rhapsody", "Queen")
-    playlist.agregar_cancion("Stairway to Heaven", "Led Zeppelin")
-    playlist.agregar_cancion("Hotel California", "Eagles")
+
 
 
     while True:
