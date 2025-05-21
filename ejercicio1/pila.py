@@ -37,7 +37,7 @@ class Pila:
     
 def invertir_palabras_frase(frase):
    
-    palabras = frase.split() # Divide la frase en una lista de palabras
+    palabras = frase.split()
     pila_palabras = Pila()
 
     for palabra in palabras:

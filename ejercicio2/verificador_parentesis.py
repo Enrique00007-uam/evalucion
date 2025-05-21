@@ -40,14 +40,12 @@ def verificar_parentesis_balanceados(cadena):
     Verifica si una cadena de texto tiene los paréntesis (), {}, y [] balanceados.
     """
     pila = Pila()
-    mapa_parentesis = { ")": "(",
-                        "}": "{",
-                        "]": "["}
+    mapa_parentesis = {")": "(", "}": "{", "]": "["}
 
     for caracter in cadena:
         if caracter in "([{":
             pila.apilar(caracter)
-        elif caracter in "])}":
+        elif caracter in ")]}":
             if pila.esta_vacia():
                 return False  # Cierre sin apertura
             if pila.cima() == mapa_parentesis[caracter]:
